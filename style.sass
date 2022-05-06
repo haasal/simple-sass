@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap")
+
+$dark: #293241
+$neutral: #394d69
+$light: #98c1d9ff
+$lightgrey: #f8f8f8
+$white: #ffffff
+$special: #ee6c4dff
+$yellow: #E9C46A
+$tank: #839788
+
+$sidebar-width: 100px
+$icon-width: $sidebar-width / 2
+$icon-shrink-factor: 1.3
+
+$transition-duration: 0.18s
+
+a
+    color: $light
+
+a:hover
+    color: $tank
+
+body
+    color: $dark
+    background-color: $white
+    font-weight: 350
+    margin: 0
+    padding: 0
+    font-family: 'Fira Sans', sans-serif
+
+.main
+    margin-left: $sidebar-width
+    padding: 1rem
+
+.article
+    color: $neutral
+    background-color: $lightgrey
+    border-radius: 0.5rem
+    padding: 1rem
+    margin: 1rem 0
+
+.sidebar
+    width: $sidebar-width
+    height: 100vh
+    position: fixed
+    position-left: 0
+    background-color: $dark
+
+.sidebar ul
+    list-style-type: none
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0
+    margin: 0
+    height: 100%
+
+.icon
+    padding: 0.7rem
+    margin: 0.5rem 0.3rem
+    background-color: $neutral
+    height: $icon-width
+    border-radius: 100%
+    transition: $transition-duration
+
+    img
+        width: $icon-width
+
+.icon:hover
+    background-color: $yellow
+    border-radius: 35%
+
+.icon:last-child
+    margin-top: auto
+    margin-bottom: 1rem
+
+.icon:first-child
+    margin-top: 1rem
